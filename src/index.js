@@ -2,6 +2,8 @@ import './style.css';
 import { renderHeader } from './header';
 import { renderHome } from './home';
 import { renderFooter } from './footer';
+import { renderMenu } from './menu';
+import { renderAbout } from './about';
 
 const content = document.querySelector('div#content');
 
@@ -25,5 +27,21 @@ function home() {
     renderFooter();
 }
 
-home();
+function menu() {
+    content.innerHTML = '';
+    renderHeader();
+    renderMenu();
+    renderFooter();
+}
+
+function about() {
+    content.innerHTML = '';
+    renderHeader();
+    renderAbout();
+    renderFooter();
+}
+
+// home();
+menu();
+// about();
 export {createHtmlElement, content}
