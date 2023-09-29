@@ -1,6 +1,7 @@
 import './style.css';
 import { renderHeader } from './header';
 import { renderHome } from './home';
+import { renderFooter } from './footer';
 
 const content = document.querySelector('div#content');
 
@@ -21,7 +22,7 @@ function home() {
     content.innerHTML = '';
     renderHeader();
     renderHome();
-    // renderFooter();
+    renderFooter();
 }
 
 home();

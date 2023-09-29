@@ -9,6 +9,17 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   renderFooter: () => (/* binding */ render)\n/* harmony export */ });\n/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ \"./src/index.js\");\n\r\n\r\nfunction render() {\r\n    const footer = (0,_index__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)('footer', 'footer', [], '');\r\n    _index__WEBPACK_IMPORTED_MODULE_0__.content.appendChild(footer);\r\n\r\n    const footerText = (0,_index__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)('p', 'footer-text', [], `Copyright © ${new Date().getFullYear()} l-e-q`);\r\n    footer.appendChild(footerText);\r\n\r\n    const footerImgLink = (0,_index__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)('a', 'footer-img-link', [], '');\r\n    footerImgLink.target = '_blank';\r\n    footerImgLink.href = 'https://github.com/l-e-q';\r\n    footer.appendChild(footerImgLink);\r\n\r\n    const footerImg = (0,_index__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)('img', 'footer-img', [], '');\r\n    footerImg.src = '../src/github-mark.png';\r\n    footerImgLink.appendChild(footerImg);\r\n\r\n}\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page-odin/./src/footer.js?");
+
+/***/ }),
+
 /***/ "./src/header.js":
 /*!***********************!*\
   !*** ./src/header.js ***!
@@ -38,7 +49,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   content: () => (/* binding */ content),\n/* harmony export */   createHtmlElement: () => (/* binding */ createHtmlElement)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\r\n\r\n\r\n\r\nconst content = document.querySelector('div#content');\r\n\r\nfunction createHtmlElement(tag, id, arrayClasses, content) {\r\n    const element = document.createElement(tag);\r\n    if (id) element.id = id;\r\n    if (arrayClasses) {\r\n        arrayClasses.forEach((Class) => {\r\n            element.classList.add(Class)\r\n        });\r\n        \r\n    }\r\n    if (content) element.innerText = content;\r\n    return element; \r\n}\r\n\r\nfunction home() {\r\n    content.innerHTML = '';\r\n    (0,_header__WEBPACK_IMPORTED_MODULE_1__.renderHeader)();\r\n    (0,_home__WEBPACK_IMPORTED_MODULE_2__.renderHome)();\r\n    // renderFooter();\r\n}\r\n\r\nhome();\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page-odin/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   content: () => (/* binding */ content),\n/* harmony export */   createHtmlElement: () => (/* binding */ createHtmlElement)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n\r\n\r\n\r\n\r\n\r\nconst content = document.querySelector('div#content');\r\n\r\nfunction createHtmlElement(tag, id, arrayClasses, content) {\r\n    const element = document.createElement(tag);\r\n    if (id) element.id = id;\r\n    if (arrayClasses) {\r\n        arrayClasses.forEach((Class) => {\r\n            element.classList.add(Class)\r\n        });\r\n        \r\n    }\r\n    if (content) element.innerText = content;\r\n    return element; \r\n}\r\n\r\nfunction home() {\r\n    content.innerHTML = '';\r\n    (0,_header__WEBPACK_IMPORTED_MODULE_1__.renderHeader)();\r\n    (0,_home__WEBPACK_IMPORTED_MODULE_2__.renderHome)();\r\n    (0,_footer__WEBPACK_IMPORTED_MODULE_3__.renderFooter)();\r\n}\r\n\r\nhome();\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page-odin/./src/index.js?");
 
 /***/ }),
 
