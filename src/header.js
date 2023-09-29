@@ -1,4 +1,4 @@
-import { createHtmlElement, content } from "./index";
+import { createHtmlElement, content, switchRender } from "./index";
 
 function render() {
     const header = createHtmlElement('header', 'header', [], '');
@@ -15,6 +15,9 @@ function render() {
         menuList.appendChild(menuListItem);
 
         const menuListItemButton = createHtmlElement('button', '', ['menu-list-item-button'], menuListItemText);
+        menuListItemButton.addEventListener('click', () => {
+            switchRender(menuListItemText)
+        })
         menuListItem.appendChild(menuListItemButton);
     });
 }

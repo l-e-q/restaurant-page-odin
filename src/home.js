@@ -1,4 +1,4 @@
-import { createHtmlElement, content } from "./index";
+import { createHtmlElement, content, switchRender } from "./index";
 
 function render() {
     const main = createHtmlElement('main', '', ['main'], '');
@@ -17,6 +17,9 @@ function render() {
     main.appendChild(description);
 
     const homeButton = createHtmlElement('button', 'home-button', [], 'Menu');
+    homeButton.addEventListener('click', () => {
+        switchRender('Menu')
+    });
     main.appendChild(homeButton);
 }
 

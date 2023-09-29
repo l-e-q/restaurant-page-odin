@@ -4,7 +4,6 @@ import { renderHome } from './home';
 import { renderFooter } from './footer';
 import { renderMenu } from './menu';
 import { renderAbout } from './about';
-import { Icon } from './github-mark.png';
 
 const content = document.querySelector('div#content');
 
@@ -43,6 +42,18 @@ function about() {
 }
 
 home();
-// menu();
-// about();
-export {createHtmlElement, content}
+
+function switchRender(target) {
+    if (target === 'Home') {
+        home();
+    } else if (target === 'Menu') {
+        menu();
+    } else if (target === 'About') {
+        about();
+    } else {
+        alert('invalid target')
+    }
+}
+
+
+export {createHtmlElement, content, switchRender}
