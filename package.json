@@ -1,0 +1,27 @@
+{
+  "name": "restaurant-page-odin",
+  "version": "1.0.0",
+  "description": "Restaurant Web Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/l-e-q/restaurant-page-odin.git"
+  },
+  "keywords": [
+    "web",
+    "page"
+  ],
+  "author": "l-e-q",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/l-e-q/restaurant-page-odin/issues"
+  },
+  "homepage": "https://github.com/l-e-q/restaurant-page-odin#readme",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
