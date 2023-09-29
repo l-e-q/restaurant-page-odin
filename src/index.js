@@ -4,6 +4,7 @@ import { renderHome } from './home';
 import { renderFooter } from './footer';
 import { renderMenu } from './menu';
 import { renderAbout } from './about';
+import { Icon } from './github-mark.png';
 
 const content = document.querySelector('div#content');
 
@@ -41,7 +42,7 @@ function about() {
     renderFooter();
 }
 
-// home();
-menu();
+home();
+// menu();
 // about();
 export {createHtmlElement, content}
