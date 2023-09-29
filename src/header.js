@@ -10,8 +10,12 @@ function render() {
     const menuList = createHtmlElement('ul', 'menu-list', [], '')
     nav.appendChild(menuList);
 
-    ['Home', 'Menu', 'About'].forEach(menuListItem => {
-        menuList.appendChild(createHtmlElement('li', '', ['menu-list-item'], menuListItem))
+    ['Home', 'Menu', 'About'].forEach(menuListItemText => {
+        const menuListItem = createHtmlElement('li', '', ['menu-list-item'], '');
+        menuList.appendChild(menuListItem);
+
+        const menuListItemButton = createHtmlElement('button', '', ['menu-list-item-button'], menuListItemText);
+        menuListItem.appendChild(menuListItemButton);
     });
 }
 
