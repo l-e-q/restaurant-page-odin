@@ -1,7 +1,7 @@
 import { createHtmlElement, content } from "./index";
 
 function render() {
-    const main = createHtmlElement('main', 'main-menu', ['main'], '');
+    const main = createHtmlElement('main', '', ['main-solid', 'main'], '');
     content.appendChild(main);
 
     const backHeadingText = createHtmlElement('p', 'menu-back-heading-text', ['back-heading-text'], 'Restaurant');

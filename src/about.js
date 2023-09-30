@@ -1,7 +1,7 @@
 import { createHtmlElement, content } from "./index";
 
 function render() {
-    const main = createHtmlElement('main', 'main-about', ['main'], '');
+    const main = createHtmlElement('main', 'main-about', ['main-solid', 'main'], '');
     content.appendChild(main);
 
     const backHeadingText = createHtmlElement('p', '', ['back-heading-text'], 'Restaurant');
@@ -13,7 +13,7 @@ function render() {
     const homeHeadingHr = createHtmlElement('hr', '', ['wide-hr'], '');
     main.appendChild(homeHeadingHr);
 
-    const aboutRestaurant = createHtmlElement('p', 'about-restaurant', [], 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsam obcaecati, cum aperiam ut error aspernatur nemo ipsum veritatis vitae, eum culpa? Vel numquam nostrum facilis corrupti fugit ipsam vitae.');
+    const aboutRestaurant = createHtmlElement('p', 'about-restaurant', [], 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat, tellus sit amet ultrices porttitor, ex ex aliquet purus, pellentesque rhoncus felis ipsum nec purus. Donec id enim in risus pellentesque blandit. Proin sed nibh nec arcu mollis rhoncus in sit amet augue. Suspendisse magna nisl, eleifend non tempor et, luctus id quam. Nulla bibendum vulputate ante, non malesuada eros lobortis euismod');
     main.appendChild(aboutRestaurant);
 }
 
