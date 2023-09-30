@@ -4,16 +4,16 @@ function render() {
     const main = createHtmlElement('main', 'main-home', ['main'], '');
     content.appendChild(main);
 
-    const backHeadingText = createHtmlElement('p', '', ['back-heading-text'], 'Restaurant');
+    const backHeadingText = createHtmlElement('p', '', ['back-heading-text'], '"Symphony of Flavors"');
     main.appendChild(backHeadingText);
 
-    const headingText = createHtmlElement('h1', '', ['heading-text'], 'Aweasome');
+    const headingText = createHtmlElement('h1', '', ['heading-text'], 'Restaurant');
     main.appendChild(headingText);
 
     const homeHeadingHr = createHtmlElement('hr', 'home-hr', ['wide-hr'], '');
     main.appendChild(homeHeadingHr);
 
-    const description = createHtmlElement('p', 'home-description', [], 'This just best restaurnt in the whole world, best of the best and you can eat our food.');
+    const description = createHtmlElement('p', 'home-description', [], "Step into the Past, Satisfy Your Present Appetite. Savor the Flavors of Yesteryears, Crafted for Today's Palate");
     main.appendChild(description);
 
     const homeButton = createHtmlElement('button', 'home-button', [], 'Menu');

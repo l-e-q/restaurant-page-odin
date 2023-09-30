@@ -40,6 +40,7 @@ html {
 }
 
 .menu-list-item-button {
+    cursor: pointer;
     background: none;
     color: var(--white);
     border: none;
@@ -111,6 +112,12 @@ html {
     padding: 15px 45px;
     background-color: var(--main-color);
     color: var(--dark);
+    cursor: pointer;
+    transition: all 250ms;
+}
+
+#home-button:hover {
+    opacity: 0.95;
 }
 
 .main-solid {
@@ -149,6 +156,7 @@ html {
     font-family: 'Noto Sans';
     font-size: 22px;
     font-weight: 300;
+    max-width: 700px;
     margin-bottom: 10px;
     text-align: center;
     color: var(--dark);
@@ -168,13 +176,8 @@ html {
     width: 280px;
     border: none;
     height: 2px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-#main-about {
-    padding-top: 10px;
-    overflow: unset;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #about-heading-text {
@@ -189,7 +192,7 @@ html {
     color: var(--dark);
     opacity: 0.8;
     line-height: 110%;
-    max-width: 600px;
+    max-width: 1000px;
     margin-bottom: 20px;
 }
 
