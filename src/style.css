@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box;
+    background-image: url('./background-img.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+#header {
+    padding: 30px;
+    border-bottom: 2px solid white;
+}
+
+#menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-list-item-button {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 28px;
+    font-weight: 300;
+    font-family: 'Noto Sans';
+    transition: 250ms all;
+}
+
+.menu-list-item-button:hover,
+.menu-list-item-button:focus {
+    color: bisque;
+}
