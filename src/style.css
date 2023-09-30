@@ -54,6 +54,56 @@ html {
 
 /* main */
 
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-heading-text {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 64px;
+    text-transform: capitalize;
+}
+
+.heading-text {
+    margin-top: -35px;
+    font-family: 'Noto Sans';
+    font-size: 82px;
+    font-weight: 900;
+    color: black;
+}
+
+#home-hr {
+    width: 300px;
+    border: none;
+    background-color: white;
+    margin: 36px;
+}
+
+.wide-hr {
+    height: 3px;
+}
+
+#home-description {
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+
+#home-button {
+    border: none;
+    font-family: 'Noto Sans';
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 36px;
+    padding: 15px 60px;
+}
+
 
 /* main end */
 

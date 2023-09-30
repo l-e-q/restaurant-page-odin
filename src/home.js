@@ -10,10 +10,10 @@ function render() {
     const headingText = createHtmlElement('h1', '', ['heading-text'], 'Aweasome');
     main.appendChild(headingText);
 
-    const homeHeadingHr = createHtmlElement('hr', '', ['wide-hr'], '');
+    const homeHeadingHr = createHtmlElement('hr', 'home-hr', ['wide-hr'], '');
     main.appendChild(homeHeadingHr);
 
-    const description = createHtmlElement('p', 'description', [], 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsam obcaecati, cum aperiam ut error aspernatur nemo ipsum veritatis vitae, eum culpa? Vel numquam nostrum facilis corrupti fugit ipsam vitae.');
+    const description = createHtmlElement('p', 'home-description', [], 'This just best restaurnt in the whole world, best of the best and you can eat our food.');
     main.appendChild(description);
 
     const homeButton = createHtmlElement('button', 'home-button', [], 'Menu');
