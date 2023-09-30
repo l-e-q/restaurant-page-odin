@@ -13,8 +13,18 @@ html {
     box-sizing: inherit;
 }
 
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* header */
+
 #header {
-    padding: 30px;
+    padding: 25px;
     border-bottom: 2px solid white;
 }
 
@@ -39,3 +49,36 @@ html {
 .menu-list-item-button:focus {
     color: bisque;
 }
+
+/* header end */
+
+/* main */
+
+
+/* main end */
+
+/* footer */
+
+#footer {
+    padding: 25px;
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+#footer-text {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Noto Sans';
+}
+
+#footer-img {
+    width: 24px;
+    height: 24px;
+}
+
+/* footer end */
+
