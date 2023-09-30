@@ -1,4 +1,7 @@
 import { createHtmlElement, content, switchRender } from "./index";
+import './reset.css';
+import './style.css';
+
 
 function render() {
     const header = createHtmlElement('header', 'header', [], '');
