@@ -1,5 +1,8 @@
 import { createHtmlElement, content } from "./index";
 import Icon from './github-mark.svg'
+import './reset.css';
+import './style.css';
+
 
 
 function render() {

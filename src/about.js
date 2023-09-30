@@ -1,4 +1,6 @@
 import { createHtmlElement, content } from "./index";
+import './reset.css';
+import './style.css';
 
 function render() {
     const main = createHtmlElement('main', 'main-about', ['main-solid', 'main'], '');

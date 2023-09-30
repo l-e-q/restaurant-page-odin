@@ -4,8 +4,8 @@ import { renderHome } from './home';
 import { renderFooter } from './footer';
 import { renderMenu } from './menu';
 import { renderAbout } from './about';
-
-const content = document.querySelector('div#content');
+import './reset.css';
+import './style.css';
 
 function createHtmlElement(tag, id, arrayClasses, content) {
     const element = document.createElement(tag);
@@ -19,6 +19,9 @@ function createHtmlElement(tag, id, arrayClasses, content) {
     if (content) element.innerText = content;
     return element; 
 }
+
+const content = createHtmlElement('div', 'content', [], '');
+document.body.appendChild(content);
 
 function home() {
     content.innerHTML = '';

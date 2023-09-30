@@ -1,4 +1,7 @@
 import { createHtmlElement, content, switchRender } from "./index";
+import './reset.css';
+import './style.css';
+
 
 function render() {
     const main = createHtmlElement('main', 'main-home', ['main'], '');
