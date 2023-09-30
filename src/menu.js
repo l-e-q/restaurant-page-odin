@@ -4,14 +4,17 @@ function render() {
     const main = createHtmlElement('main', 'main-menu', ['main'], '');
     content.appendChild(main);
 
-    const backHeadingText = createHtmlElement('p', '', ['back-heading-text'], 'Restaurant');
+    const backHeadingText = createHtmlElement('p', 'menu-back-heading-text', ['back-heading-text'], 'Restaurant');
     main.appendChild(backHeadingText);
 
-    const headingText = createHtmlElement('h1', '', ['heading-text'], 'Menu');
+    const headingText = createHtmlElement('h1', 'menu-heading-text', ['heading-text'], 'Menu');
     main.appendChild(headingText);
 
-    const homeHeadingHr = createHtmlElement('hr', '', ['wide-hr'], '');
-    main.appendChild(homeHeadingHr);
+    const div = createHtmlElement('div', 'a', [], '');
+    main.appendChild(div);
+
+    const menuHeadingHr = createHtmlElement('hr', 'menu-wide-hr', ['wide-hr'], '');
+    div.appendChild(menuHeadingHr);
 
     const restaurantMenuList = createHtmlElement('ul', 'restaurant-menu-list', [], '');
     main.appendChild(restaurantMenuList);
@@ -19,8 +22,8 @@ function render() {
     const dishes = [{
         name: 'Cake',
         description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi blanditiis vel
-                        distinctio, ullam quod dolor ratione temporibus neque vitae iste beatae nobis veniam hic ab, mollitia quas fugit
-                        placeat pariatur.`,
+                    distinctio, ullam quod dolor ratione temporibus neque vitae iste beatae nobis veniam hic ab, mollitia quas fugit
+                    placeat pariatur.`,
         price: 20
     },
     {
@@ -52,7 +55,7 @@ function render() {
         dishListItem.appendChild(dishPrice);
 
         if (dishes.indexOf(dish) !== dishes.length - 1) {const menuHr = createHtmlElement('hr', '', ['thin-hr'], '');
-            restaurantMenuList.appendChild(menuHr);
+            dishListItem.appendChild(menuHr);
         }
     })
 }

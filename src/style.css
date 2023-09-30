@@ -70,7 +70,7 @@ html {
 }
 
 .heading-text {
-    margin-top: -35px;
+    margin-top: -39px;
     font-family: 'Noto Sans';
     font-size: 82px;
     font-weight: 900;
@@ -78,14 +78,14 @@ html {
 }
 
 #home-hr {
-    width: 300px;
-    border: none;
-    background-color: white;
     margin: 36px;
 }
 
 .wide-hr {
-    height: 3px;
+    background-color: white;
+    width: 300px;
+    border: none;
+    height: 4px;
 }
 
 #home-description {
@@ -103,6 +103,64 @@ html {
     margin-bottom: 36px;
     padding: 15px 60px;
 }
+
+#main-menu {
+    background-color: #8F7052;
+    overflow-y: scroll;
+}
+
+#menu-back-heading-text {
+    margin-top: 36px;
+}
+
+#menu-heading-text {
+    opacity: 0.95;
+    text-transform: uppercase;
+}
+
+#menu-wide-hr {
+    margin: 36px;
+    height: 4px;
+    color: white;
+}
+
+#restaurant-menu-list {
+    padding-bottom: 15px;
+}
+
+.dish-name {
+    font-family: 'Noto Sans';
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dish-description {
+    font-family: 'Noto Sans';
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+}
+
+.dish-price {
+    font-family: 'Noto Sans';
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.thin-hr {
+    background-color: white;
+    width: 280px;
+    border: none;
+    height: 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 
 
 /* main end */
