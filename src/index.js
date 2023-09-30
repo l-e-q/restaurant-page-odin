@@ -55,4 +55,5 @@ function switchRender(target) {
     }
 }
 
+about();
 export {createHtmlElement, content, switchRender}

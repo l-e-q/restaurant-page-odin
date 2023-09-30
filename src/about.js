@@ -7,7 +7,7 @@ function render() {
     const backHeadingText = createHtmlElement('p', '', ['back-heading-text'], 'Restaurant');
     main.appendChild(backHeadingText);
 
-    const headingText = createHtmlElement('h1', '', ['heading-text'], 'Aweasome');
+    const headingText = createHtmlElement('h1', 'about-heading-text', ['heading-text'], 'Aweasome');
     main.appendChild(headingText);
 
     const homeHeadingHr = createHtmlElement('hr', '', ['wide-hr'], '');
